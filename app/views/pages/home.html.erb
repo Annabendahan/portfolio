@@ -1,7 +1,7 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 70%), url('<%= image_path 'bannerp.png' %>');">
 </div>
 
-<div class= "container">
+<div class= "box">
   <div class="mypic" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.1) 70%), url('<%= image_path 'Anna (2).png' %>');">
   </div>
   <div class="presentation">
@@ -10,6 +10,7 @@
       développeuse web et passionnée de design, je
       cherche un CDI ou des projets free-lance en
       developpement et web design.</p>
+      <%= link_to "TELECHARGER LE CV", download_pdf_path, class: "btn" %>
       <div class= "contact">
   <%= link_to '<i class="fab fa-facebook-f"></i>'.html_safe,  'https://www.facebook.com/anna.bendahan.7', class: "icon" %>
   <%= link_to '<i class="fab fa-instagram"></i>'.html_safe,  'https://www.instagram.com/lebendan/', class: "icon" %>
@@ -18,27 +19,59 @@
  </div>
 </div>
 
-<%= link_to "TELECHARGER LE CV", download_pdf_path, class: "btn" %>
+
 
 <div class="grey-container">
-  <h2 class="titleall text-center"> Services.</h2>
+  <h2 class= "titleall text-center">Services.</h2>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-4 col-sm-6">
-        <div class="square">
+        <div class="square text-center">
+          <i class="fas fa-wrench "></i>
+          <h3 class="stitle "> Back end </h3>
+          <p> La maitrise et l'expérience de Ruby on Rails me permettent d'implanter différentes fonctionnalités. </p>
         </div>
       </div>
       <div class="col-xs-12 col-md-4 col-sm-6">
-        <div class="square">
-          <p> salut </p>
+        <div class="square text-center">
+          <i class="far fa-eye"></i>
+          <h3 class="stitle "> Front end </h3>
+          <p> HTML5, CSS3, Bootstrap sont des outils que j'utilise à des fins de design. </p>
         </div>
       </div>
       <div class="col-xs-12 col-md-4 col-sm-6">
-        <div class="square">
+        <div class="square text-center">
+          <i class="fas fa-tv"></i>
+          <h3 class="stitle "> Animations </h3>
+          <p> De bonnes bases en JS et l'apprentisage du framework permettent la création de sites animés et avec bonne UI.  </p>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+      <div class="col-xs-12 col-md-4 col-sm-6">
+        <div class="square text-center">
+          <i class="fas fa-gem"></i>
+          <h3 class="stitle "> Creativité </h3>
+          <p> Sketch et la suite adobe pour aller au dela du simple design de base.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 col-sm-6">
+        <div class="square text-center">
+          <i class="fas fa-graduation-cap"></i>
+          <h3 class="stitle "> Formation </h3>
+          <p> Une formation en gestion à Dauphine me permettent de voir plus loin que l'informatique seul.  </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 col-sm-6">
+        <div class="square text-center">
+          <i class="fas fa-hands-helping"></i>
+          <h3 class="stitle "> Reseau d'entraide </h3>
+          <p> Le botcamp du Wagon offre à sa sortie un large réseau d'Almumi et permet une entraide  </p>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 </div>
 
